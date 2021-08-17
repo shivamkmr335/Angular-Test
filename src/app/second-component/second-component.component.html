@@ -23,6 +23,5 @@
 
 
 <button class=" p-3 border-2 m-5 rounded border-blue-600 bg-blue-300 text-2xl disabled:opacity-50 visited:text-purple-600" [disabled]="!allowNewServer" (click)="onCreateServer()" > Add Server </button>
-<button class="disabled"> Add Server </button>
 
-<p [innerText]="serverCreationStatus" ></p>
+<p class="w-full p-4 bg-gray-100" >  {{serverCreationStatus}} </p>
