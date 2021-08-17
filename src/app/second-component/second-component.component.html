@@ -3,14 +3,23 @@
 
 <hr>
 
-<Label>Server Name</Label>
+<Label>Event Binding Input</Label>
 <input 
     type="text"
-    class="bg-gray-400"
+    class="bg-gray-200 p-4 w-3/4 block border-2 rounded border-gray-900"
     (input)="onUpdateServerName($event)"
 >
 
-<p>{{serverName}}</p>
+<Label>2-Way Binding Input</Label>
+<input 
+    type="text"
+    class="bg-gray-200 p-4 w-3/4 block border-2 rounded border-gray-900"
+    [(ngModel)]="serverName"
+>
+
+
+<p class="mt-8 font-semibold">Server name</p>
+<p class="bg-gray-100 p-4" >{{serverName}}</p>
 
 
 <button class=" p-3 border-2 m-5 rounded border-blue-600 bg-blue-300 text-2xl disabled:opacity-50 visited:text-purple-600" [disabled]="!allowNewServer" (click)="onCreateServer()" > Add Server </button>

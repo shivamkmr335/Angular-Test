@@ -8,7 +8,7 @@ export class SecondComponentComponent implements OnInit {
 
   allowNewServer = false;
   serverCreationStatus = 'Mo new Server was created';
-  serverName=' ';
+  serverName='Default Server Name';
 
   constructor() {
     setTimeout( ()=>{
