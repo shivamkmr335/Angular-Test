@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-second-component',
-  templateUrl: './second-component.component.html',
+  template: `
+    <app-FirstComponent></app-FirstComponent>
+    <app-FirstComponent></app-FirstComponent>`,
 })
 export class SecondComponentComponent implements OnInit {
 
