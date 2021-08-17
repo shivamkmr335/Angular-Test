@@ -2,8 +2,7 @@
 <app-FirstComponent></app-FirstComponent>
 <app-FirstComponent></app-FirstComponent>
 
-<button class=" p-3 border-2 m-5 rounded border-blue-600 bg-blue-300 text-2xl disabled:opacity-50 visited:text-purple-600" [disabled]="allowNewServer"> Add Server </button>
+<button class=" p-3 border-2 m-5 rounded border-blue-600 bg-blue-300 text-2xl disabled:opacity-50 visited:text-purple-600" [disabled]="!allowNewServer" (click)="onCreateServer()" > Add Server </button>
 <button class="disabled"> Add Server </button>
 
-<p [innerText]="allowNewServer" ></p>
-<p > {{allowNewServer}} </p>
+<p [innerText]="serverCreationStatus" ></p>
